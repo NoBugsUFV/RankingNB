@@ -1,0 +1,11 @@
+@import "_variables.scss";
+@import "/node_modules/bulma/bulma.sass";
+body {
+    background-color: $azul-nb;
+}
+
+.box-listagem{
+    width: 300px;
+    height: 60%;
+     
+}
