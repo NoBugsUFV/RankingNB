@@ -1,11 +1,136 @@
 @import "_variables.scss";
-@import "/node_modules/bulma/bulma.sass";
+@import "../../node_modules/bulma/bulma.sass";
+
 body {
-    background-color: $azul-nb;
+    background-color: $branco-nb;
+
+    height: 100vh;
+    width: 100vw;
 }
 
+.main {
+    padding-top: 100px;
+    padding-bottom: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+
+
 .box-listagem{
-    width: 300px;
-    height: 60%;
-     
+    filter: $sombra;
+    width: 100%;
+    height: 626px;
+    background-color: $preto-nb;
+}
+
+$altura-caixa-membro: 2.8rem;
+$largura-caixa-colocacao-ranking: 4.6rem;
+
+$cor-primeiro-lugar: rgba(251,186,6,1);
+$sombra-primeiro-lugar: drop-shadow(0px 2px 8px rgba(251, 186, 6, 0.212));
+$cor-bg-caixa-membro: rgba(254,254,254,1);
+
+.Membro {
+    width: 578px;
+    height: $altura-caixa-membro;
+    overflow: visible;
+
+    margin-bottom: 0.5rem;
+
+    .CaixaColocacaoRanking {
+        background-color: $cor-primeiro-lugar;
+        float: left;
+    
+        width: $largura-caixa-colocacao-ranking;
+        height: $altura-caixa-membro;
+    
+        text-align: center;
+        vertical-align: middle;
+    
+        color: $cor-bg-caixa-membro;
+        
+        .colocacao-ranking {
+            position: relative;
+            font-family: Poppins;
+            font-weight: normal;
+            font-size: 2.4rem;
+            vertical-align: middle;
+            top: -0.4rem;
+        }
+    
+        .colocacao-ranking-indicador {
+            position: relative;
+            top:-0.4rem;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+    }
+
+    .CaixaMembro {
+        filter: $sombra-primeiro-lugar;
+        position: relative;
+    
+        width: 32rem;
+        height: $altura-caixa-membro;
+        padding: 0;
+        vertical-align: middle;
+    
+        left: $largura-caixa-colocacao-ranking;
+        background-color: $cor-bg-caixa-membro;
+    
+        .membro-foto {
+            position: relative;
+            width: 2rem;
+            height: 2rem;
+    
+            left: -3.5rem;
+            top: 0.4rem;        
+        }
+    
+        .membro-nome {
+            position: relative;
+    
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: 1.4rem;
+            text-align: right;
+    
+            width: 11rem;        
+            left: -2.8rem;
+            color: rgba(0,117,201,1);
+        }
+    
+        .membro-departamento {
+            position: relative;
+    
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 0.8rem;
+    
+            vertical-align: middle;
+            top: -0.2rem;
+            left: -2rem;
+            height: 1rem;
+    
+            color: $branco-nb;
+        }
+    
+        .membro-pontos {
+            position: relative;
+    
+            text-align: center;
+            vertical-align: middle;
+            font-family: Poppins;
+            font-weight: bold;
+            font-size: 1.2rem;
+    
+            top: -0.4rem;
+            left: -1rem;
+        
+            color: $verde-nb;
+        }
+    
+    }
 }
