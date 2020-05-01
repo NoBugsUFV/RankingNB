@@ -1,3 +1,49 @@
+@-webkit-keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+.animated-background, .loading-placeholder, .load-field {
+  -webkit-animation-duration: 1.25s;
+          animation-duration: 1.25s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: placeHolderShimmer;
+          animation-name: placeHolderShimmer;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  background: #F6F6F6;
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #F6F6F6), color-stop(18%, #F0F0F0), color-stop(33%, #F6F6F6));
+  background: linear-gradient(to right, #F6F6F6 10%, #F0F0F0 18%, #F6F6F6 33%);
+  background-size: 800px 104px;
+  height: 96px;
+  position: relative;
+}
+
+.load-field {
+  position: relative;
+  width: 25rem;
+  height: 0.8rem;
+  border-radius: 1;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
 /*! bulma.io v0.8.2 | MIT License | github.com/jgthms/bulma */
 @-webkit-keyframes spinAround {
   from {
@@ -11885,6 +11931,12 @@ body {
   padding-right: 0rem;
 }
 
+img, a {
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
 .box-listagem {
   -webkit-filter: drop-shadow(2px 3px 6px rgba(0, 0, 0, 0.2));
           filter: drop-shadow(2px 3px 6px rgba(0, 0, 0, 0.2));
@@ -11938,8 +11990,6 @@ body {
 }
 
 .Membro .CaixaMembro {
-  -webkit-filter: drop-shadow(0px 2px 8px rgba(251, 186, 6, 0.212));
-          filter: drop-shadow(0px 2px 8px rgba(251, 186, 6, 0.212));
   position: relative;
   width: 32rem;
   height: 3rem;

@@ -15,6 +15,12 @@ body {
     padding-right: 0rem;
 }
 
+img, a {
+    border:none;
+    outline: none;
+    text-decoration:none;
+}
+
     
 .box-listagem{
     filter: $sombra;
@@ -80,7 +86,7 @@ $cor-bg-caixa-membro: rgba(254,254,254,1);
     }
 
     .CaixaMembro {
-        filter: $sombra-primeiro-lugar;
+        // filter: $sombra-primeiro-lugar;
         position: relative;
     
         width: 32rem;
@@ -90,7 +96,9 @@ $cor-bg-caixa-membro: rgba(254,254,254,1);
     
         left: $largura-caixa-colocacao-ranking;
         background-color: $cor-bg-caixa-membro;
-    
+
+
+
         .membro-foto {
             position: relative;
             width: 2rem;

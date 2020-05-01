@@ -10,3 +10,42 @@ $vermelho-nb: #DC2F34;
 $roxo-nb: #9B338A;
 
 $sombra: drop-shadow(2px 3px 6px rgba(0, 0, 0, 0.20));
+
+// Animation
+@keyframes placeHolderShimmer{
+    0%{
+        background-position: -468px 0
+    }
+    100%{
+        background-position: 468px 0
+    }
+}
+
+.animated-background {
+    animation-duration: 1.25s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #F6F6F6;
+    background: linear-gradient(to right, #F6F6F6 10%, #F0F0F0 18%, #F6F6F6 33%);
+    background-size: 800px 104px;
+    height: 96px;
+    position: relative;
+}
+
+.loading-placeholder{
+    @extend .animated-background;
+}
+
+.load-field{
+    position: relative;
+    width: 25rem;
+    height: 0.8rem;
+
+    border-radius: 1;
+    margin-top: 1rem;
+    margin-left: 1rem;
+
+    @extend .animated-background
+}
