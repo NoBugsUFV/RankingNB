@@ -1,0 +1,82 @@
+@import "_variables.scss";
+
+.descricao {
+    filter: $sombra;
+    overflow: auto;
+    width: 35rem;
+    height: 626px;
+    background-color: $preto-nb;
+}
+
+.historico {
+
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    font-family: Poppins;
+
+    .tipo-ranking{
+        color: wheat;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .divisor {
+        height: 0.5rem;
+        width: 75%;
+        color: whitesmoke;
+    }
+
+    .info-membro{
+        margin-top: 1rem;
+
+        .membro-foto-descicao {
+        
+            width: 7rem;
+            height: 7rem;
+            border-radius: 50%;
+            border: 1rem solid;
+            border-width: 0.2rem;
+            border-color: white;
+            float: left;
+        }
+        .membro-foto-descicao:hover {
+            transform: scale(1.04);
+        }
+
+        .info-box {
+            float: left;
+            .membro-nome-descricao {            
+                font-family: Poppins;
+                font-weight: 700;
+                font-size: 1.2rem;
+                color: rgba(0,117,201,1);
+            }
+
+        }
+
+        .total-pontos {
+            text-align: center;
+            vertical-align: middle;
+            font-family: Poppins;
+
+            h1 {
+                position: relative;
+                margin-top: -1rem;
+                font-weight: bold;
+                font-size: 3rem;
+                color: $verde-nb;
+            }
+            
+            h2 {
+                font-weight: 400;
+                font-size: 1rem;
+                color: $verde-nb;
+                margin-bottom: 0.2rem;
+            }
+   
+        }
+    }
+    
+}

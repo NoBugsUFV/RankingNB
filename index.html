@@ -8,19 +8,25 @@
     <link rel="icon" type="image/x-icon" href="/assests/img/Proibido_Azul@0.5x.png">
     
     <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/descricao.css">
     <!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
 
+    <style>
+        /* html {
+            -moz-transform: scale(0.8);
+            -webkit-transform: scale(0.8);
+            transform: scale(0.8);  
+        } */
+    </style>
 </head>
 <body>
 
     <div class="main">
-        <div class="box-listagem">
-            
-
+        <div class="box-listagem" style="float: left;">
             <div class="ranking" id="ranking">
                 <div id="load">
                 <div class="Membro" id="membro-loading">
@@ -106,8 +112,29 @@
                 </div>
         
             </div>
-            
         </div>
+
+        <div class="descricao">
+            <div class="historico">
+                <h1 class="tipo-ranking">Ranking Geral</h1>
+                <span class="divisor"> </span>
+                <div class="info-membro">
+                    <img class="membro-foto-descicao loading-placeholder" src="assests/img/Proibido_Azul@0.5x.png" style="background-color: orangered;">
+                    <div class="info-box">
+                        <h1 class="membro-nome-descricao">Renan Lopes Silva</h1>
+                    </div>
+                    <div class="total-pontos">
+                        <h2>pontos</h2>
+                        <h1>1208</h1>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+           
+        </div>
+
+       
     </div>
 
     <!-- Font Awesome -->

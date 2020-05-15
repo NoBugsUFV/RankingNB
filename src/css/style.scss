@@ -1,6 +1,8 @@
 @import "_variables.scss";
 @import "../../node_modules/bulma/bulma.sass";
 
+
+
 body {
     background-color: $branco-nb;
 
@@ -25,7 +27,7 @@ img, a {
 .box-listagem{
     filter: $sombra;
     overflow: auto;
-    width: 100%;
+    width: 35rem;
     height: 626px;
     background-color: $preto-nb;
 }
@@ -41,7 +43,7 @@ $cor-bg-caixa-membro: rgba(254,254,254,1);
     width: 35rem;
     height: 100%;
 
-    padding-top: 10%;
+    padding-top: 1.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 10%;
